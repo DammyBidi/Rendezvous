@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Rendezvous</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+  </head>
+  <body class="font-sans bg-[(255,255,255,1)]">
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('./assets/images/hero-background.svg')"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+
+      <!-- Navbar -->
+      <header class="absolute top-8 left-0 w-full z-20">
+        <div
+          class="max-w-[1312px] mx-auto flex items-center justify-between px-6 py-4 bg-white/60 backdrop-blur-md rounded-xl"
+        >
+          <!-- Logo -->
+          <a href="#" class="text-2xl font-bold text-purple-700">rendezvous</a>
+
+          <!-- Links -->
+          <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+            <a href="#" class="hover:text-purple-700">Discover</a>
+            <a href="#" class="hover:text-purple-700">About us</a>
+            <a href="#" class="hover:text-purple-700">FAQs</a>
+            <a href="#" class="hover:text-purple-700">Contact us</a>
+          </nav>
+
+          <!-- Auth Buttons -->
+          <div class="flex items-center space-x-4">
+            <a href="#" class="text-gray-700 hover:text-purple-700">Log in</a>
+            <a
+              href="#"
+              class="px-4 py-2 bg-purple-700 text-white rounded-lg shadow hover:bg-purple-800"
+              >Sign up</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 max-w-[1440px] mx-auto h-full flex flex-col justify-end pb-20"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-16 items-center">
+          <!-- Left: Heading -->
+          <h1 class="font-bold text-4xl text-white">
+            Ready to Rock? Discover the Hottest Events Here – Your Calendar’s
+            New Best Friend!
+          </h1>
+
+          <!-- Right: Search Bar -->
+          <div
+            class="w-full bg-white rounded-[20px] shadow-lg flex items-center overflow-hidden py-4 px-6"
+          >
+            <!-- Search Icon + Input -->
+            <div class="flex items-center flex-1">
+              <img src="./assets/images/search-icon.svg" alt="Search Icon" />
+              <input
+                type="text"
+                placeholder="Search for an event"
+                class="flex-1 px-2 py-4 text-gray-700 placeholder-gray-500 outline-none"
+              />
+            </div>
+
+            <!-- Divider -->
+            <div class="h-8 w-px bg-gray-300 mx-4"></div>
+
+            <!-- Categories Dropdown -->
+            <div class="flex items-center">
+              <select class="bg-transparent text-gray-700 outline-none">
+                <option>Categories</option>
+                <option>Concerts</option>
+                <option>Sports</option>
+                <option>Conferences</option>
+              </select>
+            </div>
+
+            <!-- Search Button -->
+            <button
+              class="ml-4 px-6 py-3 bg-purple-700 text-white font-medium rounded-lg hover:bg-purple-800"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Events Section -->
+    <section class="max-w-[1440px] mx-auto px-16 py-16">
+      <!-- Header -->
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold text-gray-900">Trending events</h2>
+        <a
+          href="#"
+          class="text-purple-700 hover:underline flex items-center gap-1"
+        >
+          View all trending events
+          <img src="./assets/images/arrow-up-right.svg" alt="Arrow Icon" />
+        </a>
+      </div>
+
+      <!-- Event Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border-[rgba(224, 224, 224, 1)] overflow-hidden"
+        >
+          <img
+            src="./assets/images/card-one.svg"
+            alt="Event 1"
+            class="w-full h-54 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-900">ISWIS Live show</h3>
+            <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
+            <p class="mt-2 text-sm text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-flex items-center text-sm font-medium text-purple-700 hover:underline"
+            >
+              View details
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="ml-1 w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border-[rgba(224, 224, 224, 1)] overflow-hidden"
+        >
+          <img
+            src="./assets/images/card-two.svg"
+            alt="Event 2"
+            class="w-full h-54 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-900">ISWIS Live show</h3>
+            <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
+            <p class="mt-2 text-sm text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="details.html"
+              class="mt-4 inline-flex items-center text-sm font-medium text-purple-700 hover:underline"
+            >
+              View details
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="ml-1 w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border-[rgba(224, 224, 224, 1)] overflow-hidden"
+        >
+          <img
+            src="./assets/images/card-three.svg"
+            alt="Event 3"
+            class="w-full h-54 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-900">ISWIS Live show</h3>
+            <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
+            <p class="mt-2 text-sm text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-flex items-center text-sm font-medium text-purple-700 hover:underline"
+            >
+              View details
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="ml-1 w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section
+      class="max-w-[1440px] mx-auto px-16 py-16 grid grid-cols-1 md:grid-cols-[31%_auto] gap-8"
+    >
+      <!-- Left Text -->
+      <div class="space-y-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">
+          Discover a World of Events Tailored Just for You.
+        </h2>
+        <a
+          href="#"
+          class="inline-block px-6 py-3 bg-purple-700 text-white rounded-lg shadow hover:bg-purple-800 transition"
+        >
+          View all events
+        </a>
+      </div>
+
+      <!-- Right Grid of Event Types -->
+      <div class="flex flex-col gap-6">
+        <!-- Row for Online + Physical -->
+        <div class="flex flex-wrap gap-6">
+          <!-- Online Events -->
+          <div
+            class="w-[421px] relative rounded-lg overflow-hidden shadow-md group"
+          >
+            <img
+              src="./assets/images/event-image1.svg"
+              alt="Online Events"
+              class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex items-center justify-center"
+            >
+              <p class="text-white font-semibold text-lg">Online Events</p>
+            </div>
+          </div>
+
+          <!-- Physical Events -->
+          <div
+            class="w-[421px] relative rounded-lg overflow-hidden shadow-md group"
+          >
+            <img
+              src="./assets/images/event-image2.svg"
+              alt="Physical Events"
+              class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black/40 flex items-center justify-center"
+            >
+              <p class="text-white font-semibold text-lg">Physical Events</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hybrid Events (full width) -->
+        <div class="relative rounded-lg overflow-hidden shadow-md group">
+          <img
+            src="./assets/images/event-image3.svg"
+            alt="Hybrid Events"
+            class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-black/40 flex items-center justify-center"
+          >
+            <p class="text-white font-semibold text-lg">Hybrid Events</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[rgba(67,35,97,1)]">
+      <section class="max-w-[1440px] mx-auto px-16 py-16 flex flex-col md:flex-row justify-between gap-12 text-white">
+        <div>
+          <h1 class="text-2xl font-bold">rendezvous</h1>
+          <p class="text-base font-normal">
+            Your Personal Event Sherpa: Curating <br />
+            Awesome, One Click at a Time.
+          </p>
+        </div>
+        <div class="flex gap-12">
+          <div>
+            <h1 class="text-lg font-semibold">Feature</h1>
+            <p class="">Events discovery</p>
+            <p>Ticketing</p>
+          </div>
+          <div>
+            <h1 class="text-lg font-semibold">Company</h1>
+            <p>About Us</p>
+            <p>FAQs</p>
+            <p>Careers</p>
+            <p>Support</p>
+          </div>
+          <div>
+            <h1 class="text-lg font-semibold">Contact Us</h1>
+            <p>info@events.com</p>
+            <p>+234 701 345 6789</p>
+            <p>
+              Race Course, 8/9 Marina, <br />
+              Onikan, Lagos Lagos, 4aa Force Rd, <br />
+              Lagos Island 102273, Lagos
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
