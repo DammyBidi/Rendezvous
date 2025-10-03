@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
       <title>Rendezvous</title>
       <link rel="stylesheet" href="./assets/css/fonts.css" />
     </head>
-  </head>
+  
   <body class="font-sans bg-[(255,255,255,1)] pt-24">
     <!-- Hero Section -->
     <!-- Navbar -->
@@ -42,7 +42,8 @@
       <img
         src="./assets/images/details-hero.webp"
         alt="hero "
-        class="w-full object-contain"
+        class="w-full object-contain h-[400px]"
+        id="product-hero"
       />
     </section>
 
@@ -53,7 +54,7 @@
       <!-- Left Column -->
       <div class="space-y-8">
         <!-- Title -->
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-900">
+        <h1 id="product-title" class="text-2xl md:text-3xl font-bold text-gray-900">
           I said what I said Live Show
         </h1>
 
@@ -104,28 +105,8 @@
           <h2 class="text-lg font-semibold text-gray-900 mb-3">
             Event description
           </h2>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+          <p id="product-description" class="text-gray-700 text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
 
@@ -138,12 +119,12 @@
             <!-- Single -->
             <div>
               <p class="font-medium text-gray-700">Single</p>
-              <p class="text-purple-700 font-semibold">NGN 5,000</p>
+              <p id="product-single-price" class="text-purple-700 font-semibold">-</p>
             </div>
             <!-- Pair -->
             <div>
               <p class="font-medium text-gray-700">Pair</p>
-              <p class="text-purple-700 font-semibold">NGN 9,000</p>
+              <p id="product-pair-price" class="text-purple-700 font-semibold">-</p>
             </div>
           </div>
 
@@ -231,5 +212,7 @@
         </div>
       </section>
     </footer>
+    <script src="./productService.js"></script>
+    <script type="module" src="./events.js"></script>
   </body>
 </html>

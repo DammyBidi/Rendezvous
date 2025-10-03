@@ -106,130 +106,9 @@
         </a>
       </div>
 
-      <!-- Event Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <div
-          class="bg-white rounded-xl shadow-sm border-[rgba(224, 224, 224, 1)] overflow-hidden"
-        >
-          <img
-            src="./assets/images/card-one.svg"
-            alt="Event 1"
-            class="w-full h-54 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900">ISWIS Live show</h3>
-            <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
-            <p class="mt-2 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a
-              href="details.html"
-              class="mt-4 inline-flex items-center text-sm font-medium text-purple-700 hover:underline"
-            >
-              View details
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="ml-1 w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="bg-white rounded-xl shadow-sm border-[rgba(224, 224, 224, 1)] overflow-hidden"
-        >
-          <img
-            src="./assets/images/card-two.svg"
-            alt="Event 2"
-            class="w-full h-54 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900">ISWIS Live show</h3>
-            <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
-            <p class="mt-2 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a
-              href="details.html"
-              class="mt-4 inline-flex items-center text-sm font-medium text-purple-700 hover:underline"
-            >
-              View details
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="ml-1 w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="bg-white rounded-xl shadow-sm border-[rgba(224, 224, 224, 1)] overflow-hidden"
-        >
-          <img
-            src="./assets/images/card-three.svg"
-            alt="Event 3"
-            class="w-full h-54 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-900">ISWIS Live show</h3>
-            <p class="text-sm text-gray-500">Sun, Oct 3rd • 6pm</p>
-            <p class="mt-2 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a
-              href="details.html"
-              class="mt-4 inline-flex items-center text-sm font-medium text-purple-700 hover:underline"
-            >
-              View details
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="ml-1 w-4 h-4"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
+      <!-- Events Grid -->
+      <div id="events-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cards will be inserted here by script -->
       </div>
     </section>
 
@@ -338,5 +217,9 @@
         </div>
       </section>
     </footer>
+    <script src="./productService.js"></script>
+    <script>
+      if (typeof renderProductsInto === 'function') renderProductsInto('#events-grid').catch(err => console.error(err));
+    </script>
   </body>
 </html>
